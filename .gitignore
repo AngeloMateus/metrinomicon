@@ -1,0 +1,11 @@
+.env
+backend/api_keys.json
+
+backend/target
+backend/Cargo.lock
+backend/log.db
+backend/.env
+backend/log.db-shm
+backend/log.db-wal
+backend/rust-analyzer.json
+backend/.DS_Store
