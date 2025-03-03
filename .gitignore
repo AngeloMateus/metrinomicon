@@ -9,3 +9,4 @@ backend/log.db-shm
 backend/log.db-wal
 backend/rust-analyzer.json
 backend/.DS_Store
+frontend/storybook-static

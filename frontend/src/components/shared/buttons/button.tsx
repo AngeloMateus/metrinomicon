@@ -47,6 +47,19 @@ export function Button({ onClick, disabled, display, loading, label }: ButtonPro
     }
   };
 
+  const spinnerSize = () => {
+    switch (display?.size) {
+      case "lg":
+        return 24;
+      case "md":
+        return 15;
+      case "sm":
+        return 15;
+      default:
+        return 20;
+    }
+  };
+
   const isDisabled = disabled || loading;
   const innerclassName = `${buttonSize()} ${className}
     ${isDisabled ? "bg-slate-600/30 text-gray-400" : ""}`;
@@ -59,7 +72,7 @@ export function Button({ onClick, disabled, display, loading, label }: ButtonPro
       }}
       className={innerclassName}>
       {loading ? (
-        <Spinner size={24} display={{ containerStyle: spinnerYPadding() }} />
+        <Spinner size={spinnerSize()} display={{ containerStyle: spinnerYPadding() }} />
       ) : (
         <p className="text-sm py-[3px]">{label}</p>
       )}

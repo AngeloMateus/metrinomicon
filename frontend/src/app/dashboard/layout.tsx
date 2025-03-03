@@ -10,7 +10,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
         </div>
         <div
           id={"main-view"}
-          className={`flex flex-1 overflow-auto my-3 mx-3 shadow-[0px_0px_1px_1px_rgba(0,0,0,0.1)] rounded-xl bg-admin-bg-dark border-[0.5] border-admin-dark`}>
+          className={`flex flex-1 overflow-auto my-3 mx-3 shadow-[0px_0px_1px_1px_rgba(0,0,0,0.1)] rounded-xl bg-admin-bg-dark border-admin-dark`}>
           {children}
         </div>
       </div>

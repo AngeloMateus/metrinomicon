@@ -25,7 +25,7 @@ export const buttonStyles = {
     button:
       "flex w-full shadow-form bg-slate-600/30 rounded-xl bg-gray-700/60 bg-gray-700 py-2 sm:py-3.5 text-base font-semibold outline-none justify-center select-none",
     buttonHover:
-      "flex w-full hover:shadow-form hover:bg-slate-600/30 rounded-xl bg-gray-700/60 bg-gray-700 py-2 sm:py-3 text-base font-semibold outline-none justify-center select-none",
+      "flex w-full hover:shadow-form enabled:hover:bg-slate-600/30 rounded-xl bg-transparent bg-gray-700 py-2 sm:py-3 text-base font-semibold outline-none justify-center select-none border",
     buttonHoverMd:
       "flex enabled:hover:bg-slate-600/30 rounded-md border-admin-light bg-transparent border-[0.5px] py-1 sm:py-1 text-base font-semibold outline-none justify-center select-none items-center",
     buttonHoverSm:
